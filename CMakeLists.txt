@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
-project(aucahuasi-arrow-dataset LANGUAGES CXX)
+project(arrow-memory-pool-test LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -31,8 +31,8 @@ set(SRC_FILES
   ${PROJECT_SOURCE_DIR}/main.cpp
 )
 
-add_executable(aucahuasi-arrow-dataset ${SRC_FILES})
-target_link_libraries(aucahuasi-arrow-dataset
+add_executable(arrow-memory-pool-test ${SRC_FILES})
+target_link_libraries(arrow-memory-pool-test
   libarrow.so
   libarrow_dataset.so
   libparquet.so

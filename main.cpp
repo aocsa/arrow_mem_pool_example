@@ -45,7 +45,7 @@ void ArrayFromVector(const std::shared_ptr<DataType>& type,
     } else {
       ASSERT_OK(builder.AppendNull());
     }
-    std::cerr << "  Append\n";
+    //std::cerr << "  Append\n";
 
   }
   ASSERT_OK(builder.Finish(out));
